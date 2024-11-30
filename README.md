@@ -1,41 +1,31 @@
-# Project Title
+# DegenToken
 
-Simple overview of use/purpose.
+The `DegenToken` smart contract is an ERC-20-based token with additional functionality for gamified reward redemption. Built using OpenZeppelin's Solidity libraries, this contract allows users to earn, burn, and redeem tokens for predefined rewards.
 
-## Description
+---
 
-An in-depth paragraph about your project and overview of use.
+## Features
 
-## Getting Started
+1. **ERC-20 Token Implementation**
+   - Token name: `Degen`
+   - Token symbol: `DGN`
+   - **Custom Decimals**: Uses 0 decimals, meaning tokens are indivisible.
 
-### Installing
+2. **Owner Privileges**
+   - Token minting is restricted to the contract owner using OpenZeppelin's `Ownable` module.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+3. **Reward System**
+   - Users can redeem their tokens for predefined rewards.
+   - Rewards are stored as a list of `Reward` structs, which include:
+     - `itemName`: The name of the reward item.
+     - `cost`: The token cost of the reward.
 
-### Executing program
+4. **Burnable Tokens**
+   - Token holders can burn tokens via the redemption process, reducing the total supply.
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+5. **Utilities**
+   - Includes a helper function `uint2str` to convert numbers to strings for dynamic reward listing.
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+---
+# Author
+**Ella Belle G. Wong**
