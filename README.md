@@ -27,7 +27,7 @@ The `DegenToken` smart contract is an ERC-20-based token with additional functio
    - Includes a helper function `uint2str` to convert numbers to strings for dynamic reward listing.
 
 ---
-``// SPDX-License-Identifier: MIT
+```// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.9.0/contracts/token/ERC20/ERC20.sol";
@@ -116,7 +116,7 @@ contract DegenToken is ERC20, Ownable, ERC20Burnable {
         return string(bstr);
     }
 }
-``
+```
 ---
 # Author
 **Ella Belle G. Wong**
